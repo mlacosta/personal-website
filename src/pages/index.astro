@@ -1,0 +1,60 @@
+---
+import BaseHead from "../components/BaseHead.astro";
+import Footer from "../components/Footer.astro";
+import { SITE_DESCRIPTION, SITE_TITLE } from "../consts";
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+  </head>
+  <body>
+    <main>
+      <h3>Mariano L. Acosta</h3>
+      <p>
+        I’m a Senior Staff Software Engineer at <a
+          href="https://www.paloaltonetworks.com/"
+          target="_blank"
+          rel="noopener noreferrer">Palo Alto Networks</a
+        > with a background in electronics engineering, software systems, observability,
+        automation, and cloud-native infrastructure.
+      </p>
+      <p>
+        I was the first hire at <a
+          href="https://www.linkedin.com/company/calyptia/posts/?feedView=all"
+          target="_blank"
+          rel="noopener noreferrer">Calyptia</a
+        >, where I helped build the company’s web products from the ground up
+        through its acquisition by Chronosphere, later continuing as Member of
+        Technical Staff on the
+        <a
+          href="https://www.chronosphere.io/"
+          target="_blank"
+          rel="noopener noreferrer">Chronosphere</a
+        > Telemetry Pipeline product, contributing to frontend architecture for observability
+        workflows before the company was acquired by Palo Alto Networks.
+        <p>
+          Earlier in my career, I worked on FPGA-based satellite avionics at <a
+            href="https://www.invap.com.ar/"
+            target="_blank"
+            rel="noopener noreferrer">INVAP</a
+          >, power electronics analysis, embedded systems, and academic research in compressed
+          sensing, systems on chip, and signal reconstruction.
+        </p>
+      </p>
+      <div class="social-links">
+        [<a href="https://www.linkedin.com/in/mlacosta/" target="_blank" rel="noopener noreferrer">LinkedIn</a>] ·
+        [<a href="https://github.com/mlacosta" target="_blank" rel="noopener noreferrer">GitHub</a>] ·
+        [<a href="mailto:marianoacosta.003@gmail.com">Email</a>]
+      </div>
+    </main>
+    <Footer />
+  </body>
+</html>
+<style>
+  .social-links {
+    margin: 0.5rem 0 0;
+    line-height: 1.6;
+  }
+</style>
